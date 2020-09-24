@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="r22-lE-nWI">
+                                <rect key="frame" x="-10" y="10" width="330" height="308"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3HK-fb-apu">
+                                        <rect key="frame" x="19" y="0.0" width="292" height="227"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Pfn-2E-lmz">
+                                                <rect key="frame" x="0.0" y="0.0" width="133.5" height="227"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4w-EB-U5g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="katniss" translatesAutoresizingMaskIntoConstraints="NO" id="KWw-Gm-Pbj">
+                                                        <rect key="frame" x="0.0" y="41.5" width="133.5" height="133.5"/>
+                                                    </imageView>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Vc-uD-mZm">
+                                                        <rect key="frame" x="0.0" y="196" width="133.5" height="32"/>
+                                                        <segments>
+                                                            <segment title="Katniss"/>
+                                                            <segment title="Jack"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="changeYou:" destination="BYZ-38-t0r" eventType="valueChanged" id="qS5-RU-NVu"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="jy8-Ri-LO2">
+                                                <rect key="frame" x="158.5" y="0.0" width="133.5" height="227"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your sidekick" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNd-v9-jUl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drWatson" translatesAutoresizingMaskIntoConstraints="NO" id="sd0-Q5-Tlv">
+                                                        <rect key="frame" x="0.0" y="41.5" width="133.5" height="133.5"/>
+                                                    </imageView>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BBo-Ns-zA6">
+                                                        <rect key="frame" x="0.0" y="196" width="133.5" height="32"/>
+                                                        <segments>
+                                                            <segment title="Watson"/>
+                                                            <segment title="Ron"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="sidekickChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="HC3-Ks-diJ"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bwO-2T-JWV">
+                                        <rect key="frame" x="0.0" y="242" width="330" height="66"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="gDf-eL-Per">
+                                                <rect key="frame" x="60" y="0.0" width="210.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caps &amp; Font" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRf-dQ-Ygj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yIE-3v-n6v">
+                                                        <rect key="frame" x="161.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="updateFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="9IW-gJ-a07"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="8Kg-PJ-PhZ">
+                                                <rect key="frame" x="0.0" y="36" width="330" height="30"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="6" maxValue="17" translatesAutoresizingMaskIntoConstraints="NO" id="Blg-U6-hva">
+                                                        <rect key="frame" x="-2" y="0.0" width="234.5" height="31"/>
+                                                        <connections>
+                                                            <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="D1X-nP-kaB"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKR-C1-xD1">
+                                                        <rect key="frame" x="297.5" y="0.0" width="32.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r22-lE-nWI" secondAttribute="trailing" id="IDG-Gi-vsK"/>
+                            <constraint firstItem="r22-lE-nWI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dgz-ZU-9Ax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="r22-lE-nWI" secondAttribute="leading" constant="10" id="s6Z-5U-a0e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="capitalSwitch" destination="yIE-3v-n6v" id="to8-V5-hJ7"/>
+                        <outlet property="fontSizeLabel" destination="eKR-C1-xD1" id="690-vL-4Aa"/>
+                        <outlet property="sidekickControl" destination="BBo-Ns-zA6" id="Pjx-Oh-D5x"/>
+                        <outlet property="sidekickImage" destination="sd0-Q5-Tlv" id="cwr-ov-iuT"/>
+                        <outlet property="sidekickLabel" destination="sNd-v9-jUl" id="HnB-8b-Zev"/>
+                        <outlet property="youControl" destination="8Vc-uD-mZm" id="JNR-hl-d72"/>
+                        <outlet property="youImage" destination="KWw-Gm-Pbj" id="KBP-GZ-sYF"/>
+                        <outlet property="youLabel" destination="T4w-EB-U5g" id="uFI-vu-Ga9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="118.30985915492958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="drWatson" width="133.33332824707031" height="133.33332824707031"/>
+        <image name="katniss" width="133.33332824707031" height="133.33332824707031"/>
+    </resources>
+</document>
