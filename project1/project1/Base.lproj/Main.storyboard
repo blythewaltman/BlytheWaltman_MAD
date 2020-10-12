@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="layoutTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fp9-pC-pvI">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Prev" id="Ztj-j0-3ne">
+                                        <connections>
+                                            <action selector="prevButtonTapped:" destination="BYZ-38-t0r" id="VmD-d6-UKh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NSA-qi-GEY"/>
+                                    <barButtonItem title="Next" id="KOY-71-oAy">
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="BYZ-38-t0r" id="jhX-vT-dht"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients &amp; Tools" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MJ-GY-wL7">
+                                <rect key="frame" x="133.5" y="49" width="147" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4kz-Ce-Qw9">
+                                <rect key="frame" x="5" y="94" width="404" height="668"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inst1" translatesAutoresizingMaskIntoConstraints="NO" id="RhI-Sz-GKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="334"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="Z65-Jw-Dot">
+                                        <rect key="frame" x="0.0" y="334" width="404" height="334"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ILT-bG-c2i">
+                                <rect key="frame" x="79" y="772" width="256.5" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHi-eu-OET">
+                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eOf-67-U6i">
+                                        <rect key="frame" x="106.5" y="0.0" width="150" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHB-ta-lkG">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                                                <connections>
+                                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eB-nm-y5J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82X-tz-kcg">
+                                                <rect key="frame" x="60" y="0.0" width="30" height="50"/>
+                                                <connections>
+                                                    <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m5p-do-acG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na3-o2-hTT">
+                                                <rect key="frame" x="120" y="0.0" width="30" height="50"/>
+                                                <connections>
+                                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCD-Me-9FF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squiggle" translatesAutoresizingMaskIntoConstraints="NO" id="UaL-rH-h1V">
+                                <rect key="frame" x="0.0" y="54" width="414" height="37"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4kz-Ce-Qw9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="0Ft-By-iYA"/>
+                            <constraint firstItem="ILT-bG-c2i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5rR-8c-OZu"/>
+                            <constraint firstItem="4kz-Ce-Qw9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="6mj-ba-Jdg"/>
+                            <constraint firstItem="fp9-pC-pvI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="884-cP-jyD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UaL-rH-h1V" secondAttribute="trailing" id="8lt-qK-v6y"/>
+                            <constraint firstItem="2MJ-GY-wL7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="G3C-ld-wgD"/>
+                            <constraint firstAttribute="trailing" secondItem="4kz-Ce-Qw9" secondAttribute="trailing" constant="5" id="IKn-XS-FQq"/>
+                            <constraint firstItem="fp9-pC-pvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PjN-CS-jaX"/>
+                            <constraint firstItem="UaL-rH-h1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UU8-o0-CVX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4kz-Ce-Qw9" secondAttribute="bottom" constant="100" id="Z63-pS-oLH"/>
+                            <constraint firstItem="fp9-pC-pvI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="arg-ed-ZKz"/>
+                            <constraint firstItem="ILT-bG-c2i" firstAttribute="top" secondItem="4kz-Ce-Qw9" secondAttribute="bottom" constant="10" id="eF9-Pg-eLv"/>
+                            <constraint firstItem="2MJ-GY-wL7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="foa-Ei-vpP"/>
+                            <constraint firstItem="4kz-Ce-Qw9" firstAttribute="top" secondItem="UaL-rH-h1V" secondAttribute="bottom" constant="3" id="gLi-dO-sFX"/>
+                            <constraint firstItem="UaL-rH-h1V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="qa1-xx-9Zh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="helperImage" destination="Z65-Jw-Dot" id="Tlr-PQ-cXO"/>
+                        <outlet property="instructionImage" destination="RhI-Sz-GKa" id="xT3-jP-uPt"/>
+                        <outlet property="nextBTN" destination="KOY-71-oAy" id="hkI-TW-3sb"/>
+                        <outlet property="pauseButton" destination="82X-tz-kcg" id="yUY-ui-0w0"/>
+                        <outlet property="prevBTN" destination="Ztj-j0-3ne" id="AKj-fR-xJf"/>
+                        <outlet property="resetButton" destination="Na3-o2-hTT" id="m4a-6A-Tkl"/>
+                        <outlet property="startButton" destination="YHB-ta-lkG" id="aaJ-s8-Oe4"/>
+                        <outlet property="stepLabel" destination="2MJ-GY-wL7" id="eDr-1g-2or"/>
+                        <outlet property="timerLabel" destination="RHi-eu-OET" id="7Bk-vm-9vC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img1" width="525.66668701171875" height="400"/>
+        <image name="inst1" width="200" height="133.33332824707031"/>
+        <image name="squiggle" width="100" height="56"/>
+    </resources>
+</document>
