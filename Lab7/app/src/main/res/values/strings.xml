@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="name_plant">Name your plant and make it grow!</string>
+    <string name="buttonText">Grow</string>
+    <string name="growText" />
+    <string name="editName">Name</string>
+    <string name="name_hint">Name</string>
+</resources>
