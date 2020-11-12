@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Lab8</string>
+    <string name="movie_heading">Movie Rater</string>
+    <string name="seen">Seen it</string>
+    <string name="yes_switch">Yes</string>
+    <string name="no_switch">No</string>
+    <string name="awesome_rating">Awesome</string>
+    <string name="good_rating">Good</string>
+    <string name="bad_rating">Bad</string>
+    <string name="terrible_rating">Terrible</string>
+    <string name="description1">Good Actors</string>
+    <string name="description2">Bad Actors</string>
+    <string name="description3">Scary</string>
+    <string name="description4">Funny</string>
+    <string name="description5">Romantic</string>
+    <string name="description6">Intresting plot</string>
+    <string name="movie_text" />
+    <string name="rate_button">Rate</string>
+    <string-array name="movies">
+        <item>Iron Man</item>
+        <item>The Notebook</item>
+        <item>Avatar</item>
+        <item>Inception</item>
+    </string-array>
+</resources>
