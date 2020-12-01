@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">project2</string>
+    <string name="zone2BtnValue">2</string>
+    <string name="zone3BtnValue">3</string>
+    <string name="zone4BtnValue">4</string>
+    <string name="zone5BtnValue">5</string>
+    <string name="zone6BtnValue">6</string>
+    <string name="zone7BtnValue">7</string>
+    <string name="zone8BtnValue">8</string>
+    <string name="zone9BtnValue">9</string>
+    <string name="zone10BtnValue">10</string>
+    <string name="hardinessTitle">USDA Plant Hardiness Zones</string>
+    <string name="map_description">Hardiness Map</string>
+</resources>
