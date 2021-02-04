@@ -1,2 +1,2 @@
-#Author: Blythe Waltman
-Mobile Application Development Labs
+# Author: Blythe Waltman
+Mobile Application Development Projects
